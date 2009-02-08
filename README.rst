@@ -14,8 +14,10 @@ Dependancies
  * Django 1.0.1+
  * docutils
  * pygments
- * django-comment-utils (http://github.com/jezdez/django-comment-utils/tree/master)
- * django-tagging
+ * django-comment-utils (git clone http://github.com/jezdez/django-comment-utils.git)
+ * django-tagging (svn checkout http://django-tagging.googlecode.com/svn/trunk/)
+ * django-mailer (svn checkout http://django-mailer.googlecode.com/svn/trunk/)
+ * django-gravatar (svn checkout http://django-gravatar.googlecode.com/svn/trunk/)
 
 Future users
 ------------

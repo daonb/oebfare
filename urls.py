@@ -1,4 +1,4 @@
-
+import os
 from django.conf import settings
 from django.conf.urls.defaults import *
 from django.contrib import admin
@@ -21,7 +21,7 @@ urlpatterns = patterns("",
 
 if settings.LOCAL_DEVELOPMENT:
     urlpatterns += patterns("django.views",
-        url(r"^static/(?P<path>.*)", "static.serve", {
-            "document_root": settings.MEDIA_ROOT,
+        url(r"^%s(?P<path>.*)" % settings.MEDIA_URL[1:], "static.serve", {
+            "document_root": os.path.join(os.path.dirname(__file__), "static"),
         })
     )
