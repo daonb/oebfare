@@ -1,4 +1,10 @@
 
+:title: oebfare README
+:slug: oebfare_README
+:authors: brosner, daonb
+:active: True
+:tags: oebfare, docs
+
 oebfare is the source code that runs the blog at http://oebfare.com. The code
 is freely available for you to use however you want.
 
