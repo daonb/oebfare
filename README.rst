@@ -94,14 +94,14 @@ settings you should likely need to configure are:
  * ``EMAIL_PORT``
  * ``EMAIL_SUBJECT_PREFIX``
  * ``EMAIL_USE_TLS``
- * ``MEDIA_ROOT``
  * ``MEDIA_URL``
+ * ``THEME``
 
 This is by no means a complete list. The most important settings are going
 to be the database settings. Make sure you set them correctly.
 
 Notice the ``LOCAL_DEVELOPMENT`` settings. This setting is used to control
-whether the media in ``MEDIA_ROOT`` is served up at ``MEDIA_URL`` by default
+whether the media in ``/themes/THEME/static`` is served up at ``MEDIA_URL`` by default
 when running ``runserver``. This is handy for testing, but please do not use it
 in production. The setting name should hopefully defer that.
 
